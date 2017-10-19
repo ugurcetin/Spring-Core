@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<!-- <context:component-scan base-package="com.ugurcetin"></context:component-scan> -->
+ 
+ 
+	<bean id="beanOgrenci" class="com.ugurcetin.Ogrenci">
+		<property name="adi" value="Kerem"></property>
+		<property name="soyadi" value="Yılmaz"></property>
+		<property name="numarasi" value="1881"></property>
+	</bean>
+	
+	<bean id="beanDers" class="com.ugurcetin.Ders">
+		<property name="dersAdi" value="Spring MVC"></property>
+		<property name="puan" value="85"></property>
+		<!-- <property name="ogrenci" ref="beanOgrenci"></property> -->
+	</bean>
+	
+	
+</beans>
+
